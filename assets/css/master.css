@@ -1,0 +1,83 @@
+.active {
+    color: rgb(243, 83, 83) !important;
+}
+
+.span__hamburger {
+    display: flex;
+    width: 43px;
+    height: 38px;
+    font-weight: bolder;
+    border: 2px solid white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    transform: rotate(90deg);
+
+}
+
+.header__top {
+    height: 193px;
+    background-image: url(../img/header-background-scaled.jpg);
+
+    >img {
+        width: 210px;
+        height: 114px;
+        object-fit: cover;
+    }
+}
+
+.header__bottom {
+    background-color: rgb(69, 21, 42);
+    height: 60px;
+
+    >nav {
+        display: flex;
+        justify-content: center !important;
+
+        >ul>li>a {
+            font-size: 15px;
+            line-height: 27px;
+            letter-spacing: 0.377px;
+
+            &:hover {
+                color: rgb(243, 83, 83) !important;
+            }
+        }
+    }
+}
+
+.banner {
+    height: 85vh;
+    background-size: cover;
+    background-image: url(../img/hero-background-full-scaled.jpg);
+
+    .btn {
+        width: 225px;
+        height: 50px;
+        background-color: rgb(128, 39, 65);
+        >button{
+            background-color: inherit;
+            border: none;
+        }
+
+        &:hover {
+            background-color: rgb(249, 98, 100);
+        }
+    }
+
+    .fa-solid--wine-glass-alt {
+        display: inline-block;
+        width: 0.57em;
+        height: 1em;
+        --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 288 512'%3E%3Cpath fill='%23000' d='M216 464h-40V346.81c68.47-15.89 118.05-79.91 111.4-154.16l-15.95-178.1C270.71 6.31 263.9 0 255.74 0H32.26c-8.15 0-14.97 6.31-15.7 14.55L.6 192.66C-6.05 266.91 43.53 330.93 112 346.82V464H72c-22.09 0-40 17.91-40 40c0 4.42 3.58 8 8 8h208c4.42 0 8-3.58 8-8c0-22.09-17.91-40-40-40M61.75 48h164.5l7.17 80H54.58z'/%3E%3C/svg%3E");
+        background-color: currentColor;
+        -webkit-mask-image: var(--svg);
+        mask-image: var(--svg);
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: 100% 100%;
+        mask-size: 100% 100%;
+        margin-left: 5px;
+    }
+}

@@ -1,0 +1,38 @@
+@media screen and (max-width:576px),
+(max-width:768px) {
+    .header__top {
+        height: 144px;
+    }
+
+    .header__bottom {
+        height: 100px;
+    }
+
+    .banner {
+        background-position: center;
+    }
+}
+
+@media screen and (min-width:577px) {
+    .banner {
+        background-position: center;
+    }
+}
+
+@media screen and (min-width:769px) {
+    .header__top {
+        height: 192px;
+    }
+
+    .header__bottom {
+        height: 56px;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    .banner {
+        height: 700px;
+        background-position: top;
+    }
+
+}

@@ -1,0 +1,88 @@
+    /* start bottomFixedImage */
+    .bottomImage {
+        position: absolute;
+        bottom: 20px;
+        right: 5px;
+        width: 200px;
+        height: 110px;
+
+        >.imgFixed {
+            width: 80px;
+            height: 80px;
+            position: fixed;
+            bottom: 15px;
+            right: 30px;
+            z-index: 3;
+
+            >img {
+                width: 100%;
+                height: 100%;
+                border: 6px solid rgba(26, 25, 25, 0.062);
+                object-fit: cover;
+                border-radius: 50%;
+                position: relative;
+                z-index: 999;
+                transition: .6s;
+                box-shadow: 4px 5px 9px 7px rgba(245, 65, 92, 0.911);
+
+                &:hover {
+                    cursor: pointer;
+                    transform: perspective(200px) rotate3D(0, 1, 0, 5deg);
+                }
+            }
+
+            >a {
+                width: 40px;
+                height: 40px;
+                z-index: 99;
+                position: fixed;
+                bottom: 54px;
+                right: 40px;
+                transition: 1s;
+                border: 3px solid rgba(245, 65, 92, 0.911);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(255, 255, 255, 0.616);
+
+
+                >i {
+                    color: black;
+                    font-size: 20px;
+                }
+
+                &:hover {
+                    transform: scale(1.05);
+                    background-color: rgba(243, 74, 100, 0.842);
+
+                    border: 1px solid white;
+
+                    >i {
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        &:hover>.imgFixed>a {
+
+            &:nth-of-type(1) {
+                bottom: 10px;
+                right: 121px;
+            }
+
+            &:nth-of-type(2) {
+                bottom: 56px;
+                right: 121px;
+            }
+
+            &:nth-of-type(3) {
+
+                bottom: 103px;
+                right: 121px;
+            }
+        }
+    }
+
+    /* end bottomFixedImage */
