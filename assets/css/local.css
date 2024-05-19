@@ -10,6 +10,67 @@
 
     .banner {
         background-position: center;
+
+        h3 {
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 27px;
+        }
+    }
+
+    .bottomImage {
+        display: none;
+    }
+
+    .tours {
+        >.row {
+            width: 400px;
+            height: 270px;
+            position: absolute;
+        }
+    }
+}
+
+@media screen and (max-width:576ps),
+(max-width:640px) {
+    .dark {
+        height: 180px;
+    }
+
+    .card1 {
+        transform: translateY(-130px);
+
+        figure {
+            width: 558px;
+            height: 300px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    .header__top {
+        height: 113px;
+
+        >img {
+            width: 170px;
+            height: 102px;
+            padding: 8px 5px;
+            margin-left: 12px;
+        }
+    }
+}
+
+@media screen and (min-width:641px) {
+    .dark {
+        height: 73px;
+    }
+
+    .card1 {
+        transform: translateY(-36.5px);
+        margin: 0 23px;
     }
 }
 
@@ -33,6 +94,23 @@
     .banner {
         height: 700px;
         background-position: top;
+    }
+}
+@media screen and (min-width:2100px) {
+    .subscribe {
+
+        >.row>form {
+            >input {
+                width: 800px;
+                height: 70px;
+            }
+            >.row>a {
+                margin-top: 25px;
+                width: 350px;
+                height: 60px;
+            }
+        }
+
     }
 
 }
