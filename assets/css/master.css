@@ -67,6 +67,7 @@ body {
         >li {
             position: relative;
             transition: .4s ease-in-out;
+
             >a {
                 font-size: 15px;
                 line-height: 27px;
@@ -76,10 +77,12 @@ body {
                     color: rgb(243, 83, 83) !important;
                 }
             }
+
             &:hover>ul {
                 opacity: 1;
                 visibility: visible;
             }
+
             >ul {
                 position: absolute;
                 top: 50px;
@@ -349,7 +352,6 @@ body {
 
 /* start footer */
 footer {
-    height: 100vh;
     background-image: url(../img/footer-background-scaled.jpg);
     background-size: cover;
     position: relative;
@@ -366,52 +368,46 @@ footer {
             }
         }
 
-        ul {
-            >li {
-                >a {
-                    display: flex;
-                    font-size: 13px;
-                    line-height: 23.4px;
-                    transition: .4s;
-                    color: white;
-                    padding-bottom: 11px;
-                    font-family: Karla;
-                    transition: .4s ease-in-out;
+        ul>li {
+            >a {
+                display: flex;
+                font-size: 13px;
+                line-height: 23.4px;
+                transition: .4s;
+                color: white;
+                padding-bottom: 11px;
+                font-family: Karla;
+                transition: .4s ease-in-out;
 
-                    &:hover {
-                        background-color: rgb(249, 98, 100);
-                    }
+                &:hover {
+                    color: rgb(249, 98, 100);
                 }
             }
         }
-
 
         .active {
             color: rgb(220, 67, 74);
         }
 
         p {
-            font-size: 14px;
+            font-size: 12px;
             line-height: 22px;
             transition: .4s;
             color: white;
             font-family: Montserrat;
-            position: absolute;
-            left: 50%;
-            bottom: 10px;
-            transform: translate(-50%, 0);
 
             >a {
                 text-decoration: none;
 
                 >span {
-                    font-size: 15px;
+                    font-size: 13px;
                     font-weight: bold;
                     color: white;
                     font-family: PlayfairDisplay;
+                    transition: .4s;
 
                     &:hover {
-                        font-size: 17px;
+                        font-size: 15px;
                         color: rgb(220, 67, 74);
                         -webkit-text-stroke: 1px rgba(0, 0, 0, 0.849);
                         color: white;
@@ -441,6 +437,9 @@ footer {
                 font-family: PlayfairDisplay;
             }
         }
+    }
+    .row>img{
+        height: 35px;
     }
 }
 

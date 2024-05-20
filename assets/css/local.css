@@ -47,6 +47,13 @@
                     }
                 }
             }
+            .row{
+                form {
+                    >.btn {
+                        font-size: 13px;
+                    }
+                }
+            }
         }
     }
 }
@@ -143,6 +150,7 @@
     }
 
     footer {
+        height: 100vh;
         .row {
             p {
                 bottom: 10px;
@@ -193,11 +201,5 @@
         height: 1000px;
         background-position: bottom;
         background-size: cover;
-
-        .row {
-            p {
-                bottom: 30px;
-            }
-        }
     }
 }
