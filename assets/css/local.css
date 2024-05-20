@@ -31,6 +31,24 @@
             position: absolute;
         }
     }
+
+    footer {
+        .row {
+            p {
+                bottom: -4px;
+                text-align: center;
+                font-size: 12px;
+
+                >a>span {
+                    font-size: 13px;
+
+                    &:hover {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width:576ps),
@@ -46,6 +64,16 @@
             width: 558px;
             height: 300px;
             margin-bottom: 30px;
+        }
+    }
+
+    .news {
+        .news__bottom {
+            >figure>img {
+                width: 426px;
+                height: 311px;
+                margin-top: 15px;
+            }
         }
     }
 }
@@ -72,6 +100,24 @@
         transform: translateY(-36.5px);
         margin: 0 23px;
     }
+
+    footer {
+        .row {
+            p {
+                bottom: -4px;
+                text-align: center;
+                font-size: 12px;
+
+                >a>span {
+                    font-size: 13px;
+
+                    &:hover {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (min-width:577px) {
@@ -95,22 +141,63 @@
         height: 700px;
         background-position: top;
     }
+
+    footer {
+        .row {
+            p {
+                bottom: 10px;
+                text-align: center;
+                font-size: 14px;
+
+                >a>span {
+                    font-size: 15px;
+
+                    &:hover {
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
 }
+
 @media screen and (min-width:2100px) {
     .subscribe {
+        /* background-image: linear-gradient(#f6f7f9, #dfe5e8) 20%, url(../img/subscribe-background-scaled.jpg); */
+        background-image: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 43%), url(../img/subscribe-background-scaled.jpg);
+        height: 1400px;
+        background-position: bottom;
+        background-size: cover;
 
         >.row>form {
             >input {
                 width: 800px;
                 height: 70px;
             }
+
             >.row>a {
                 margin-top: 25px;
                 width: 350px;
                 height: 60px;
             }
         }
-
     }
 
+    .tours {
+        height: 850px;
+        background-position: top;
+        background-size: cover;
+    }
+
+    footer {
+        height: 1000px;
+        background-position: bottom;
+        background-size: cover;
+
+        .row {
+            p {
+                bottom: 30px;
+            }
+        }
+    }
 }

@@ -13,9 +13,14 @@
     src: url(../font/ARIAL.TTF);
 }
 
+@font-face {
+    font-family: Karla;
+    src: url(../font/Karla-Regular.ttf);
+}
+
 body {
     font-family: Montserrat;
-    ;
+    overflow-x: hidden;
 }
 
 /* start top */
@@ -72,6 +77,7 @@ body {
     height: 85vh;
     background-size: cover;
     background-image: url(../img/hero-background-full-scaled.jpg);
+    background-position: center;
 
     h1 {
         font-family: PlayfairDisplay;
@@ -125,6 +131,7 @@ body {
     border-radius: 6px;
     background-image: url(../img/calltoaction-background.jpg);
     background-size: cover;
+    background-position: center;
     position: relative;
 
     >figcaption {
@@ -213,6 +220,7 @@ body {
         font-size: 14px;
     }
 }
+
 /* end subscribe */
 
 /* start tours */
@@ -228,7 +236,8 @@ body {
         width: 536px;
         height: 310px;
         position: absolute;
-        >.row>a{
+
+        >.row>a {
             display: flex;
             width: 234px;
             height: 43px;
@@ -238,3 +247,143 @@ body {
 }
 
 /* end tours */
+
+
+/* start news */
+.news {
+    >.row {
+        >p {
+            color: rgb(75, 33, 49);
+        }
+
+        >h3 {
+            font-family: PlayfairDisplay;
+            color: rgb(69, 21, 42);
+            margin-top: -3px;
+        }
+    }
+
+    .news__bottom {
+        width: 100%;
+
+        >figure {
+            >img {
+                width: 376px;
+                height: 276px;
+                object-fit: cover;
+            }
+
+            >figcaption {
+                font-family: PlayfairDisplay;
+            }
+        }
+    }
+
+    >.row>.btn {
+        width: 197px;
+        height: 41px;
+        background-color: rgb(128, 39, 65);
+        font-size: 15px;
+    }
+}
+
+/* end news */
+
+/* start footer */
+footer {
+    height: 100vh;
+    background-image: url(../img/footer-background-scaled.jpg);
+    background-size: cover;
+    position: relative;
+
+    >.row {
+        /* height: 595px; */
+
+        >figure {
+            width: 223px;
+            height: 120px;
+
+            >img {
+                width: inherit;
+                height: inherit;
+                object-fit: cover;
+            }
+        }
+
+        ul{
+            >li {
+                >a {
+                    display: flex;
+                    font-size: 13px;
+                    line-height: 23.4px;
+                    transition: .4s;
+                    color: white;
+                    padding-bottom: 11px;
+                    font-family: Karla;
+    
+                    &:hover {
+                        color: rgb(220, 67, 74);
+                    }
+                }
+            }
+        }     
+       
+
+        .active {
+            color: rgb(220, 67, 74);
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 22px;
+            transition: .4s;
+            color: white;
+            font-family: Montserrat;
+            position: absolute;
+            left: 50%;
+            bottom: 10px;
+            transform: translate(-50%, 0);
+
+            >a {
+                text-decoration: none;
+
+                >span {
+                    font-size: 15px;
+                    font-weight: bold;
+                    color: white;
+                    font-family: PlayfairDisplay;
+
+                    &:hover {
+                        font-size: 17px;
+                        color: rgb(220, 67, 74);
+                        -webkit-text-stroke: 1px rgba(0, 0, 0, 0.849);
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        form {
+            >input{
+                outline: none;
+            }
+            >.btn {
+                background-color: rgb(69, 21, 42);
+                font-size: 14px;
+                letter-spacing: 2px;
+                transition: .4s;
+                font-family: Karla;
+
+                &:hover {
+                    background-color: rgb(220, 67, 74);
+                }
+            }
+
+            >h2 {
+                font-family: PlayfairDisplay;
+            }
+        }
+    }
+}
+
+/* end footer */
