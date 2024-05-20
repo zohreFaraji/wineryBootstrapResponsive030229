@@ -63,9 +63,45 @@ body {
     background-color: rgb(69, 21, 42);
     height: 60px;
 
-    >ul>li>a {
-        &:hover {
-            color: rgb(243, 83, 83) !important;
+    >ul {
+        >li {
+            position: relative;
+            transition: .4s ease-in-out;
+            >a {
+                font-size: 15px;
+                line-height: 27px;
+                font-family: Karla;
+
+                &:hover {
+                    color: rgb(243, 83, 83) !important;
+                }
+            }
+            &:hover>ul {
+                opacity: 1;
+                visibility: visible;
+            }
+            >ul {
+                position: absolute;
+                top: 50px;
+                width: 160px;
+                height: 50px;
+                background-color: rgb(69, 21, 42);
+                opacity: 0;
+                visibility: hidden;
+
+                >li {
+                    >a {
+                        font-size: 15px;
+                        line-height: 27px;
+                        font-family: Karla;
+                        color: white;
+
+                        &:hover {
+                            color: rgb(243, 83, 83) !important;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -87,6 +123,7 @@ body {
         width: 225px;
         height: 50px;
         background-color: rgb(128, 39, 65);
+        transition: .4s ease-in-out;
 
         >button {
             background-color: inherit;
@@ -155,6 +192,11 @@ body {
         position: absolute;
         bottom: 0;
         left: 0;
+        transition: .4s ease-in-out;
+
+        &:hover {
+            background-color: rgb(249, 98, 100);
+        }
     }
 }
 
@@ -207,9 +249,14 @@ body {
 
             >.row>a {
                 width: 252px;
-                height: 40px;
+                height: 43px;
                 background-color: rgb(128, 39, 65);
                 font-size: 14px;
+                transition: .4s ease-in-out;
+
+                &:hover {
+                    background-color: rgb(249, 98, 100);
+                }
             }
         }
     }
@@ -242,6 +289,11 @@ body {
             width: 234px;
             height: 43px;
             background-color: rgb(128, 39, 65);
+            transition: .4s ease-in-out;
+
+            &:hover {
+                background-color: rgb(249, 98, 100);
+            }
         }
     }
 }
@@ -284,6 +336,12 @@ body {
         height: 41px;
         background-color: rgb(128, 39, 65);
         font-size: 15px;
+        margin-bottom: 30px;
+        transition: .4s ease-in-out;
+
+        &:hover {
+            background-color: rgb(249, 98, 100);
+        }
     }
 }
 
@@ -297,8 +355,6 @@ footer {
     position: relative;
 
     >.row {
-        /* height: 595px; */
-
         >figure {
             width: 223px;
             height: 120px;
@@ -310,7 +366,7 @@ footer {
             }
         }
 
-        ul{
+        ul {
             >li {
                 >a {
                     display: flex;
@@ -320,14 +376,15 @@ footer {
                     color: white;
                     padding-bottom: 11px;
                     font-family: Karla;
-    
+                    transition: .4s ease-in-out;
+
                     &:hover {
-                        color: rgb(220, 67, 74);
+                        background-color: rgb(249, 98, 100);
                     }
                 }
             }
-        }     
-       
+        }
+
 
         .active {
             color: rgb(220, 67, 74);
@@ -364,9 +421,10 @@ footer {
         }
 
         form {
-            >input{
+            >input {
                 outline: none;
             }
+
             >.btn {
                 background-color: rgb(69, 21, 42);
                 font-size: 14px;
