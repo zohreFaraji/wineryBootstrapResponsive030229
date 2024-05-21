@@ -4,32 +4,22 @@
         height: 144px;
     }
 
+    .subscribe {
+        h2 {
+            font-size: 60px;
+        }
+    }
+
     .header__bottom {
         height: 100px;
     }
 
     .banner {
         background-position: center;
-
-        h3 {
-            font-size: 14px;
-        }
-
-        h1 {
-            font-size: 27px;
-        }
     }
 
     .bottomImage {
         display: none;
-    }
-
-    .tours {
-        >.row {
-            width: 400px;
-            height: 270px;
-            position: absolute;
-        }
     }
 
     footer {
@@ -59,6 +49,38 @@
     }
 }
 
+@media screen and (max-width:576px),
+(max-width:639px) {
+    .tours {
+        >.row {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            width: 370px;
+            height: 270px;
+            position: absolute;
+            font-size: 13px;
+            line-height: 20px;
+            padding: 0;
+            text-align: center;
+
+            >h2 {
+                font-size: 60px;
+            }
+
+            .p2 {
+                font-size: 12.5px;
+            }
+
+            .row {
+                display: flex;
+                justify-content: center;
+                margin: 0;
+            }
+        }
+    }
+}
+
 @media screen and (max-width:576ps),
 (max-width:640px) {
     .dark {
@@ -78,8 +100,8 @@
     .news {
         .news__bottom {
             >figure>img {
-                width: 426px;
-                height: 311px;
+                width: 320px;
+                height: 230px;
                 margin-top: 15px;
             }
         }
@@ -192,6 +214,12 @@
         }
     }
 
+    .banner {
+        .btn {
+            width: 300px;
+        }
+    }
+
     .tours {
         height: 850px;
         background-position: top;
@@ -208,11 +236,31 @@
 @media screen and (min-width:3092px) {
     footer {
         .bg {
-            width: 38%;
+            width: 20%;
         }
 
         .pic {
-            width: 10%;
+            width: 8%;
         }
+    }
+
+    .tours {
+        .row {
+            width: 100%;
+            height: 210px;
+            text-align: center;
+
+            >.p2 {
+                width: 520px;
+                margin: auto;
+                text-align: justify;
+                padding: 30px 0;
+            }
+
+            .row>a {
+                margin: 0 auto;
+            }
+        }
+
     }
 }

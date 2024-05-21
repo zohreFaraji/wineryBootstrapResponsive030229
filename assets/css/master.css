@@ -23,6 +23,11 @@ body {
     overflow-x: hidden;
 }
 
+a,
+button {
+    font-family: Karla;
+}
+
 /* start top */
 .row {
     display: flex;
@@ -120,10 +125,14 @@ body {
 
     h1 {
         font-family: PlayfairDisplay;
+        font-size: 100px;
+    }
+
+    h3 {
+        font-size: 22px;
     }
 
     .btn {
-        width: 225px;
         height: 50px;
         background-color: rgb(128, 39, 65);
         transition: .4s ease-in-out;
@@ -251,7 +260,7 @@ body {
             }
 
             >.row>a {
-                width: 252px;
+                /* width: 252px; */
                 height: 43px;
                 background-color: rgb(128, 39, 65);
                 font-size: 14px;
@@ -286,6 +295,21 @@ body {
         width: 536px;
         height: 310px;
         position: absolute;
+        font-family: Montserrat;
+
+        >p {
+            font-size: 17px;
+        }
+
+        >h2 {
+            font-size: 60px;
+            font-family: PlayfairDisplay;
+        }
+
+        >.p2 {
+            font-size: 14px;
+            line-height: 25px;
+        }
 
         >.row>a {
             display: flex;
@@ -309,9 +333,11 @@ body {
     >.row {
         >p {
             color: rgb(75, 33, 49);
+            font-size: 17px;
         }
 
         >h3 {
+            font-size: 60px;
             font-family: PlayfairDisplay;
             color: rgb(69, 21, 42);
             margin-top: -3px;
@@ -338,7 +364,7 @@ body {
         width: 197px;
         height: 41px;
         background-color: rgb(128, 39, 65);
-        font-size: 15px;
+        font-size: 14px;
         margin-bottom: 30px;
         transition: .4s ease-in-out;
 
@@ -438,7 +464,8 @@ footer {
             }
         }
     }
-    .row>img{
+
+    .row>img {
         height: 35px;
     }
 }
