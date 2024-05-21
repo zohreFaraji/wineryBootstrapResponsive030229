@@ -1,4 +1,4 @@
-# wineryBootstrapResponsive
+# wineryResponsive
 
 ![winery1](https://github.com/zohreFaraji/wineryBootstrapResponsive030229/assets/165832749/b99ea638-6dd8-4002-819e-22eecb4a395e)
 
