@@ -19,7 +19,12 @@
     }
 
     .bottomImage {
-        display: none;
+        >.imgFixed {
+            width: 78px;
+            height: 78px;
+            bottom: 5px;
+            right: 18px;
+        }
     }
 
     footer {
@@ -262,5 +267,25 @@
             }
         }
 
+    }
+}
+
+@media screen and (min-width:1710px),
+(max-width:2319px) {
+
+    .bottomImage {
+        >.imgFixed {
+            width: 90px;
+            height: 90px;
+            bottom: 18px;
+            right: 25px;
+        }
+    }
+}
+
+@media screen and (min-width:2320px) {
+
+    .bottomImage {
+        display: none;
     }
 }
